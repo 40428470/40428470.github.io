@@ -1,0 +1,14 @@
+table th,td{
+	border: 2px solid;
+	border-color: black;
+	border-collapse: collapse;
+	
+
+}
+thead {
+	text-align: left;
+}
+tbody {
+	text-align:left;
+}
+
