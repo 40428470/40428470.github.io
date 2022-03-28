@@ -1,17 +1,18 @@
 body {
-	background-color: #116f8e
+	background-color:  #67cebd;
 }
 header {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 25px;
 	align-items: center;
-	background-color: #506b51;
+	background-color: #4a4f4a;
 	height: 170px;
+	border-radius: 20%;
 }
 #logo-img {
-	height: 150px;
-	width: 150px;
+	height: 120px;
+	width: 120px;
 	border-radius: 50%;
 	margin-left: 1%
 }
@@ -19,13 +20,13 @@ header {
 	margin-left: 20%;
 	font-family: lucida console;
 	font-size: 75px;
-	color: #00d8a6;
+	color: #2862e0;
 }
 #page-title-2 {
 	margin-left: 1%;
 	font-family: lucida console;
 	font-size: 75px;
-	font-color: 
+	color: #e09514;
 }
 nav {
 	display: flex;
@@ -35,7 +36,7 @@ nav {
 #site-links {
 	border: 1px solid;
 	border-style: solid;
-	background-color: green;
+	background-color: #d33f41;
 	width: 230px;
 }
 #access-button {
@@ -54,7 +55,9 @@ a.nav-link:link {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 20px;
 }
+
 #main-img {
 	height:500px;
 	width: 700px;
