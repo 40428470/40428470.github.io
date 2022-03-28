@@ -1,30 +1,39 @@
 body {
-	background-color:white
+	background-color: #116f8e
 }
 header {
 	display: flex;
 	flex-direction: row;
-	padding-bottom: 25px;
+	margin-bottom: 25px;
+	align-items: center;
+	background-color: #117f4c;
+	height: 170px;
 }
 #logo-img {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
+	margin-left: 1%
 }
 #page-title {
-	position: center;
+	margin-left: 20%
 }
+#fun {
+	font-family: 
+
 nav {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 #site-links {
 	border: 1px solid;
 	border-style: solid;
 	background-color: green;
 }
-.access-button {
-	align-self: center;
+#access-button {
+	align-self: flex-end;
+	
 }
 a.nav-link:link {
 	color: black;
@@ -43,11 +52,8 @@ a.nav-link:link {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid;
-	border-style: solid;
 }
 #main-sub-1 {
-	border: 1px solid;
 	
 }
 #main-sub-2 {
