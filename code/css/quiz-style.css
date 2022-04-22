@@ -69,6 +69,31 @@ main {
 	height: 220px;
 	width: 400px;
 }
+#quest-5-img {
+	height: 250px;
+	width: 250px;
+}
+
+#quest-6-img {
+	height: 200px;
+	width: 300px;
+}
+
+#quest-7-img {
+	height: 300px;
+	width: 500px;
+	padding-right: 20px;
+}
+
+#quest-8-img {
+	height: 325px;
+	width: 300px;
+}
+
+#quest-9-img {
+	height: 400px;
+	width: 550px;
+}
 
 #quiz-nav-start {
 	margin-top: 10px;
