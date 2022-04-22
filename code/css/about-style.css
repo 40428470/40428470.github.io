@@ -50,14 +50,12 @@ a.nav-link:link {
 #sec-1 {
 	font-family: monaco;
 	font-size: 30px;
-	text-decoration: underline;
+	
 }
 main {
 	display: flex;
 	flex-direction: row;
-	border: 2px solid;
-	border-style: solid;
-	border-radius: 5%;
+	
 }
 #p-sec {
 	font-family: monaco;
@@ -67,6 +65,6 @@ aside {
 	margin-left: 200px;
 }
 img {
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 }

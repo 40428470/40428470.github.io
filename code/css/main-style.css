@@ -39,11 +39,8 @@ nav {
 	background-color: #d33f41;
 	width: 230px;
 }
-#access-button {
-	align-self: flex-end;
-	
-}
-a.nav-link:link {
+
+a.nav-link:link, a.nav-link:visited, a.nav-link:hover {
 	color: black;
 	text-decoration: none;
 	font-size: 30px;
@@ -51,6 +48,7 @@ a.nav-link:link {
 	margin-left: 2%;
 	margin-right: 2%;
 }
+
 #sec-1 {
 	display: flex;
 	flex-direction: column;
@@ -59,16 +57,15 @@ a.nav-link:link {
 }
 
 #main-img {
-	height:500px;
-	width: 700px;
+	height:400px;
+	width: 600px;
 }
 #main-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-#main-sub-1 {
-	
+	font-family: monaco;
+	font-size: 20px;
 }
 #main-sub-2 {
 	display: flex;
@@ -77,6 +74,12 @@ a.nav-link:link {
 
 #quiz-button {
 	align-self: center;
+}
+button {
+	height:100px;
+	width: 200px;
+	font-size: 20px;
+	background-color: #23C173;
 }
 
 	
