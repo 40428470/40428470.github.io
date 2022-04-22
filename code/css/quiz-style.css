@@ -54,5 +54,14 @@ main {
 	align-items: center;
 }
 
+.question {
+	margin-top: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+	font-family: Helvetica;
+	font-size: 20px;
+	background-color: 
+}
+
 
 	
