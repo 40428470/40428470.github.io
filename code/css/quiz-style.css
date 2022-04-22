@@ -65,6 +65,11 @@ main {
 	background-color: #ECF0C3;
 }
 
+#quest-3-img {
+	height: 220px;
+	width: 400px;
+}
+
 #quiz-nav-start {
 	margin-top: 10px;
 	border: 1px solid;
@@ -77,7 +82,7 @@ main {
 	margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 75px;
+	width: 110px;
 	background-color: #d33f41;
 }
 
@@ -85,7 +90,7 @@ main {
 	margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 200px;
+	width: 190px;
 	background-color: #d33f41;
 }
  
@@ -96,4 +101,12 @@ main {
 	padding-right: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+a.quiz-link:link, a.quiz-link:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a.quiz-link:hover {
+	color: blue;
 }
