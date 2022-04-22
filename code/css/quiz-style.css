@@ -64,18 +64,29 @@ main {
 	font-size: 20px;
 	background-color: #ECF0C3;
 }
-.quiz-nav-start/end {
+
+#quiz-nav-start {
 	margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 100px;
+	width: 75px;
+	background-color: #d33f41;
+}
+
+#quiz-nav-end {
+	margin-top: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 75px;
+	background-color: #d33f41;
 }
 
 .quiz-nav {
 	margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 100px;
+	width: 200px;
+	background-color: #d33f41;
 }
  
 .quiz-link {
