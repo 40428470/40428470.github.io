@@ -39,7 +39,7 @@ nav {
 	background-color: #d33f41;
 	width: 230px;
 }
-a.nav-link:link {
+a.nav-link:link, a.nav-link:visited, a.nav-link:hover {
 	color: black;
 	text-decoration: none;
 	font-size: 30px;
@@ -47,6 +47,7 @@ a.nav-link:link {
 	margin-left: 2%;
 	margin-right: 2%;
 }
+
 #sec-1 {
 	font-family: monaco;
 	font-size: 30px;
