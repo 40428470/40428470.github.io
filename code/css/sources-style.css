@@ -39,7 +39,7 @@ nav {
 	background-color: #d33f41;
 	width: 230px;
 }
-a.nav-link:link, a.nav-link:visited, a.nav-link:hover {
+a.nav-link:link, a.nav-link:visited {
 	color: black;
 	text-decoration: none;
 	font-size: 30px;
@@ -48,14 +48,15 @@ a.nav-link:link, a.nav-link:visited, a.nav-link:hover {
 	margin-right: 2%;
 }
 
+a.nav-link:hover {
+	color: blue;
+}
 
-table th,td{
+table th, td {
 	border: 2px solid;
 	border-color: black;
 	border-collapse: collapse;
 	background-color: white;
-	
-
 }
 thead {
 	text-align: left;
