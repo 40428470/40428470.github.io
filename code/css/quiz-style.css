@@ -91,13 +91,13 @@ main {
 }
 
 #quest-9-img {
-	height: 400px;
-	width: 550px;
+	height: 300px;
+	width: 450px;
 }
 
 #quest-10-img {
-	height: 300px;
-	width: 550px;
+	height: 250px;
+	width: 450px;
 }
 
 #quest-11-img {
@@ -110,27 +110,27 @@ main {
 	width: 500px;
 }
 
-#quiz-nav-start {
-	margin-top: 10px;
-	border: 1px solid;
-	border-radius: 5px;
-	width: 75px;
-	background-color: #d33f41;
+#quest-13-img {
+	height:300px;
+	width: 500px;
 }
 
-#quiz-nav-end {
-	margin-top: 10px;
-	border: 1px solid;
-	border-radius: 5px;
-	width: 110px;
-	background-color: #d33f41;
+#quest-14-img {
+	height: 300px;
+	width: 300px;
 }
 
-.quiz-nav {
+#quest-15-img {
+	height: 300px;
+	width: 350px;
+}
+
+
+#quiz-nav {
 	margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 190px;
+	width: 150px;
 	background-color: #d33f41;
 }
  
