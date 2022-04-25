@@ -85,6 +85,8 @@ function checkAnswer_1() {
 function checkAnswer_2() {
     /* This function checks how the user has answered the questions on quiz page 2 and stores them in an array */
 
+    console.log(userAns);
+
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
         var quest5 = "correct";
@@ -253,23 +255,61 @@ function checkAnswer_4() {
 }
 
 function storeAnswer_1(userAns) {
-    userAns[1] = "test1"
-    userAns[2] = "test2"
-    userAns[3] = "test3"
+    /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 1*/
+
+    //converting user answer arrya to json 
+    //var userAns_json = JSON.stringify(userAns);
+    //console.log(userAns_json)
+    
+    //storing user answers in session storage
+    sessionStorage.setItem("1", userAns[0]);
+    sessionStorage.setItem("2", userAns[1]);
+    sessionStorage.setItem("3", userAns[2]);
+    sessionStorage.setItem("4", userAns[3]);
+ 
+}
+
+function storeAnswer_2(userAns) {
+    /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 2*/
+
     //converting user answer arrya to json 
     //var userAns_json = JSON.stringify(userAns);
     //console.log(userAns_json)
 
-
-    
     //storing user answers in session storage
-    sessionStorage.setItem("1", userAns_json);
-    sessionStorage.setItem("2", userAns_json[1]);
-    sessionStorage.setItem("3", userAns_json[2]);
-    sessionStorage.setItem("4", userAns_json[3]);
+    sessionStorage.setItem("1", userAns[0]);
+    sessionStorage.setItem("2", userAns[1]);
+    sessionStorage.setItem("3", userAns[2]);
+    sessionStorage.setItem("4", userAns[3]);
+
+}
+
+function storeAnswer_3(userAns) {
+    /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 3*/
+
+    //converting user answer arrya to json 
+    //var userAns_json = JSON.stringify(userAns);
+    //console.log(userAns_json)
+
+    //storing user answers in session storage
+    sessionStorage.setItem("1", userAns[0]);
+    sessionStorage.setItem("2", userAns[1]);
+    sessionStorage.setItem("3", userAns[2]);
+    sessionStorage.setItem("4", userAns[3]);
+
+}
 
 
-    //console.log(sessionStorage.length)
-    var x = sessionStorage.getItem("test");
-    console.log(typeof x)
+function storeAnswer_4(userAns) {
+    /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 4*/
+
+    //converting user answer arrya to json 
+    //var userAns_json = JSON.stringify(userAns);
+    //console.log(userAns_json)
+
+    //storing user answers in session storage
+    sessionStorage.setItem("1", userAns[0]);
+    sessionStorage.setItem("2", userAns[1]);
+    sessionStorage.setItem("3", userAns[2]);
+
 }

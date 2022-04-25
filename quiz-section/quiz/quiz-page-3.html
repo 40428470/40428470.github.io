@@ -3,9 +3,8 @@
 	<head>
 		<title>Fun Quiz - Quiz Page 3</title>
 		<link rel="stylesheet" href="../../code/css/quiz-style.css" type="text/css" />
-		<script src="../../code/js/quiz.js"></script>
 	</head>
-	<body onload="code/js/quiz.js">
+	<body>
 		<header class="page-top">
 			<img id="logo-img" src="../../images/common/logo.png" />
 			<h1 id="page-title-1">Fun </h1>
@@ -14,7 +13,7 @@
 		<nav>
 			<section id="site-links">
 				<a class="nav-link" href="../../index.html">Home</a>
-				<a class ="nav-link" href="../../site-info-section/about-page.html">About</a>
+				<a class="nav-link" href="../../site-info-section/about-page.html">About</a>
 				<a class="nav-link" href="../../site-info-section/sources-page.html">Sources</a>
 			</section>
 		</nav>
@@ -22,58 +21,63 @@
 			<h2>Quiz</h2>
 		</section>
 		<main>
-		<section id="sub-container">
-			<section class="question">
-				<h3>Question 9:</h3>
-				<img id="quest-9-img" src="../../images/quiz-section/quest9.jpg"/>
-				<p>How long is the river Nile?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest9" id="quest-9-a"> 12,578 km</li>
-					<li><input type="radio" name="quest9" id="quest-9-b"> 3,234 km</li>
-					<li><input type="radio" name="quest9" id="quest-9-c"> 6,650 km</li>
-					<li><input type="radio" name="quest9" id="quest-9-d"> 7,890 km</li>
-				</ol>
+			<section id="sub-container">
+				<section class="question">
+					<h3>Question 9:</h3>
+					<img id="quest-9-img" src="../../images/quiz-section/quest9.jpg" />
+					<p>How long is the river Nile?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest9" id="quest-9-a"> 12,578 km</li>
+						<li><input type="radio" name="quest9" id="quest-9-b"> 3,234 km</li>
+						<li><input type="radio" name="quest9" id="quest-9-c"> 6,650 km</li>
+						<li><input type="radio" name="quest9" id="quest-9-d"> 7,890 km</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onlcick="checkAnswer_3();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 10:</h3>
+					<img id="quest-10-img" src="../../images/quiz-section/quest10.jpg" />
+					<p>What year was the planet Pluto reclassified as a dwarf-planet?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest10" id="quest-10-a"> 1967</li>
+						<li><input type="radio" name="quest10" id="quest-10-b"> 2011</li>
+						<li><input type="radio" name="quest10" id="quest-10-c"> 1989</li>
+						<li><input type="radio" name="quest10" id="quest-10-d"> 2006</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onlcick="checkAnswer_3();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 11:</h3>
+					<img id="quest-11-img" src="../../images/quiz-section/quest11.jpg" />
+					<p>Which scientist was the head of the Manhattan Project?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest11" id="quest-11-a"> J. Robert Oppenheimer</li>
+						<li><input type="radio" name="quest11" id="quest-11-b"> Albert Einstein</li>
+						<li><input type="radio" name="quest11" id="quest-11-c"> Richard Feynman</li>
+						<li><input type="radio" name="quest11" id="quest-11-d"> Niels Bohr</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onlcick="checkAnswer_3();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 12:</h3>
+					<img id="quest-12-img" src="../../images/quiz-section/quest12.jpg">
+					<p>Who won the men's 100m freestyle swimmming event in the 2008 Beijing Olympics?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest12" id="quest-12-a"> Park Tae-hwan</li>
+						<li><input type="radio" name="quest12" id="quest-12-b"> Alain Bernard</li>
+						<li><input type="radio" name="quest12" id="quest-12-c"> Matt Grevers</li>
+						<li><input type="radio" name="quest12" id="quest-12-d"> Kosuke Kitajima</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onlcick="checkAnswer_3();">Submit</button>
+				</section>
 			</section>
-			<section class="question">
-				<h3>Question 10:</h3>
-				<img id="quest-10-img" src="../../images/quiz-section/quest10.jpg" />
-				<p>What year was the planet Pluto reclassified as a dwarf-planet?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest10" id="quest-10-a"> 1967</li>
-					<li><input type="radio" name="quest10" id="quest-10-b"> 2011</li>
-					<li><input type="radio" name="quest10" id="quest-10-c"> 1989</li>
-					<li><input type="radio" name="quest10" id ="quest-10-d"> 2006</li>
-				</ol>
-			</section>
-			<section class="question">
-				<h3>Question 11:</h3>
-				<img id="quest-11-img" src="../../images/quiz-section/quest11.jpg" />
-				<p>Which scientist was the head of the Manhattan Project?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest11" id="quest-11-a"> J. Robert Oppenheimer</li>
-					<li><input type="radio" name="quest11" id="quest-11-b"> Albert Einstein</li>
-					<li><input type="radio" name="quest11" id="quest-11-c"> Richard Feynman</li>
-					<li><input type="radio" name="quest11" id="quest-11-d"> Niels Bohr</li>
-				</ol>
-			</section>
-			<section class="question">
-			<h3>Question 12:</h3>
-			<img id="quest-12-img" src="../../images/quiz-section/quest12.jpg">
-			<p>Who won the men's 100m freestyle swimmming event in the 2008 Beijing Olympics?</p>
-			<ol type="a">
-				<li><input type="radio" name="quest12" id="quest-12-a"> Park Tae-hwan</li>
-				<li><input type="radio" name="quest12" id="quest-12-b"> Alain Bernard</li>
-				<li><input type="radio" name="quest12" id="quest-12-c"> Matt Grevers</li>
-				<li><input type="radio" name="quest12" id="quest-12-d"> Kosuke Kitajima</li>
-			</ol>
-			</section>
-		</section>
 			<section id="quiz-nav">
-				<a class="quiz-link" href="quiz-page-1.html">1</a>
-				<a class="quiz-link" href="quiz-page-2.html">2</a>
-				<a class="quiz-link" href="quiz-page-3.html">3</a>
-				<a class="quiz-link" href="quiz-page-4.html">4</a>
+				<a onclick="storeAnswer_3();" class="quiz-link" href="quiz-page-1.html">1</a>
+				<a onclick="storeAnswer_3();" class="quiz-link" href="quiz-page-2.html">2</a>
+				<a class="quiz-link">3</a>
+				<a onclick="storeAnswer_3();" class="quiz-link" href="quiz-page-4.html">4</a>
 			</section>
 		</main>
+		<script src="../../code/js/quiz.js"></script>
 	</body>
 </html>

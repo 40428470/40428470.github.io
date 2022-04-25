@@ -3,9 +3,8 @@
 	<head>
 		<title>Fun Quiz - Quiz Page 2</title>
 		<link rel="stylesheet" href="../../code/css/quiz-style.css" type="text/css" />
-		<script src="../../code/js/quiz.js"></script>
 	</head>
-	<body onload="code/js.quiz.js">
+	<body>
 		<header class="page-top">
 			<img id="logo-img" src="../../images/common/logo.png" />
 			<h1 id="page-title-1">Fun </h1>
@@ -14,7 +13,7 @@
 		<nav>
 			<section id="site-links">
 				<a class="nav-link" href="../../index.html">Home</a>
-				<a class ="nav-link" href="../../site-info-section/about-page.html">About</a>
+				<a class="nav-link" href="../../site-info-section/about-page.html">About</a>
 				<a class="nav-link" href="../../site-info-section/sources-page.html">Sources</a>
 			</section>
 		</nav>
@@ -22,58 +21,63 @@
 			<h2>Quiz</h2>
 		</section>
 		<main>
-		<section id="sub-container">
-			<section class="question">
-				<h3>Question 5:</h3>
-				<img id="quest-5-img" src="../../images/quiz-section/quest5.jpg"/>
-				<p>What year was the Challenger Space Shuttle Tragedy?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest5" id="quest-5-a"> 1956</li>
-					<li><input type="radio" name="quest5" id="quest-5-b"> 1986</li>
-					<li><input type="radio" name="quest5" id="quest-5-c"> 1998</li>
-					<li><input type="radio" name="quest5" id="quest-5-d"> 2001</li>
-				</ol>
+			<section id="sub-container">
+				<section class="question">
+					<h3>Question 5:</h3>
+					<img id="quest-5-img" src="../../images/quiz-section/quest5.jpg" />
+					<p>What year was the Challenger Space Shuttle Tragedy?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest5" id="quest-5-a"> 1956</li>
+						<li><input type="radio" name="quest5" id="quest-5-b"> 1986</li>
+						<li><input type="radio" name="quest5" id="quest-5-c"> 1998</li>
+						<li><input type="radio" name="quest5" id="quest-5-d"> 2001</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_2();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 6:</h3>
+					<img id="quest-6-img" src="../../images/quiz-section/quest6.jpg" />
+					<p>What was the last year Italy won the World Cup?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest6" id="quest-6-a"> 2014</li>
+						<li><input type="radio" name="quest6" id="quest-6-b"> 2006</li>
+						<li><input type="radio" name="quest6" id="quest-6-c"> 1982</li>
+						<li><input type="radio" name="quest6" id="quest-6-d"> 2002</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_2();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 7:</h3>
+					<img id="quest-7-img" src="../../images/quiz-section/quest7.jpg" />
+					<p>What movie won the Oscar award for best picture in 2020?</p>
+					<ol type="a">
+						<li><input type="radio" id="quest-7-a"> Joker</li>
+						<li><input type="radio" id="quest-7-b"> 1917</li>
+						<li><input type="radio" id="quest-7-c"> Green Book</li>
+						<li><input type="radio" id="quest-7-d"> Parasite</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_2();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 8:</h3>
+					<img id="quest-8-img" src="../../images/quiz-section/quest8.jpg">
+					<p>How many seasons of the A-Team(1983) aired?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest8" id="quest-8-a"> 3</li>
+						<li><input type="radio" name="quest8" id="quest-8-b"> 8</li>
+						<li><input type="radio" name="quest8" id="quest-8-c"> 5</li>
+						<li><input type="radio" name="quest8" id="quest-8-d"> 12</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_2();">Submit</button>
+				</section>
 			</section>
-			<section class="question">
-				<h3>Question 6:</h3>
-				<img id="quest-6-img" src="../../images/quiz-section/quest6.jpg"/>
-				<p>What was the last year Italy won the World Cup?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest6" id="quest-6-a"> 2014</li>
-					<li><input type="radio" name="quest6" id="quest-6-b"> 2006</li>
-					<li><input type="radio" name="quest6" id="quest-6-c"> 1982</li>
-					<li><input type="radio" name="quest6" id ="quest-6-d"> 2002</li>
-				</ol>
-			</section>
-			<section class="question">
-				<h3>Question 7:</h3>
-				<img id="quest-7-img" src="../../images/quiz-section/quest7.jpg" />
-				<p>What movie won the Oscar award for best picture in 2020?</p>
-				<ol type="a">
-					<li><input type="radio" id="quest-7-a"> Joker</li>
-					<li><input type="radio" id="quest-7-b"> 1917</li>
-					<li><input type="radio" id="quest-7-c"> Green Book</li>
-					<li><input type="radio" id="quest-7-d"> Parasite</li>
-				</ol>
-			</section>
-			<section class="question">
-			<h3>Question 8:</h3>
-			<img id="quest-8-img" src="../../images/quiz-section/quest8.jpg">
-			<p>How many seasons of the A-Team(1983) aired?</p>
-			<ol type="a">
-				<li><input type="radio" name="quest8" id="quest-8-a"> 3</li>
-				<li><input type="radio" name="quest8" id="quest-8-b"> 8</li>
-				<li><input type="radio" name="quest8" id="quest-8-c"> 5</li>
-				<li><input type="radio" name="quest8" id="quest-8-d"> 12</li>
-			</ol>
-			</section>
-		</section>
 			<section id="quiz-nav">
-				<a class="quiz-link" href="quiz-page-1.html">1</a>
-				<a class="quiz-link" href="quiz-page-2.html">2</a>
-				<a class="quiz-link" href="quiz-page-3.html">3</a>
-				<a class="quiz-link" href="quiz-page-4.html">4</a>
+				<a onclick="storeAnswer_2();" class="quiz-link" href="quiz-page-1.html">1</a>
+				<a class="quiz-link">2</a>
+				<a onclick="storeAnswer_2();" class="quiz-link" href="quiz-page-3.html">3</a>
+				<a onclick="storeAnswer_2();" class="quiz-link" href="quiz-page-4.html">4</a>
 			</section>
 		</main>
+		<script src="../../code/js/quiz.js"></script>
 	</body>
 </html>

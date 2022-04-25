@@ -3,7 +3,6 @@
 	<head>
 		<title>Fun Quiz - Quiz Page 4</title>
 		<link rel="stylesheet" href="../../code/css/quiz-style.css" type="text/css" />
-		<script src="../../code/js/quiz.js"></script>
 	</head>
 	<body onload="code/js/quiz.js">
 		<header class="page-top">
@@ -14,7 +13,7 @@
 		<nav>
 			<section id="site-links">
 				<a class="nav-link" href="../../index.html">Home</a>
-				<a class ="nav-link" href="../../site-info-section/about-page.html">About</a>
+				<a class="nav-link" href="../../site-info-section/about-page.html">About</a>
 				<a class="nav-link" href="../../site-info-section/sources-page.html">Sources</a>
 			</section>
 		</nav>
@@ -22,51 +21,54 @@
 			<h2>Quiz</h2>
 		</section>
 		<main>
-		<section>
-			<section class="question">
-				<h3>Question 13:</h3>
-				<img id="quest-13-img" src="../../images/quiz-section/quest13.jpg" />
-				<p>What year was Marvels The Avengers released?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest13" id="quest-13-a"> 2012</li>
-					<li><input type="radio" name="quest13" id="quest-13-b"> 2009</li>
-					<li><input type="radio" name="quest13" id="quest-13-c"> 2015</li>
-					<li><input type="radio" name="quest13" id="quest-13-d"> 2016</li>
-				</ol>
-			
+			<section>
+				<section class="question">
+					<h3>Question 13:</h3>
+					<img id="quest-13-img" src="../../images/quiz-section/quest13.jpg" />
+					<p>What year was Marvels The Avengers released?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest13" id="quest-13-a"> 2012</li>
+						<li><input type="radio" name="quest13" id="quest-13-b"> 2009</li>
+						<li><input type="radio" name="quest13" id="quest-13-c"> 2015</li>
+						<li><input type="radio" name="quest13" id="quest-13-d"> 2016</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_4();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 14:</h3>
+					<img id="quest-14-img" src="../../images/quiz-section/quest14.jpg" />
+					<p>What season of Rick and Morty(2013) introduced the character "evil Morty"?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest14" id="quest-14-a"> 5</li>
+						<li><input type="radio" name="quest14" id="quest-14-b"> 3</li>
+						<li><input type="radio" name="quest14" id="quest-14-c"> 4</li>
+						<li><input type="radio" name="quest14" id="quest-14-d"> 1</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_4();">Submit</button>
+				</section>
+				<section class="question">
+					<h3>Question 15:</h3>
+					<img id="quest-15-img" src="../../images/quiz-section/quest15.png" />
+					<p>What is the biggest country, by land mass in the world?</p>
+					<ol type="a">
+						<li><input type="radio" name="quest15" id="quest-15-a"> USA</li>
+						<li><input type="radio" name="quest15" id="quest-15-b"> China</li>
+						<li><input type="radio" name="quest15" id="quest-15-c"> Russia</li>
+						<li><input type="radio" name="quest15" id="quest-15-d"> Greenland</li>
+					</ol>
+					<button class="submit_button" name="submit_button" onclick="checkAnswer_4();">Submit</button>
+				</section>
 			</section>
-			<section class="question">
-				<h3>Question 14:</h3>
-				<img id="quest-14-img" src="../../images/quiz-section/quest14.jpg" />
-				<p>What season of Rick and Morty(2013) introduced the character "evil Morty"?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest14" id="quest-14-a"> 5</li>
-					<li><input type="radio" name="quest14" id="quest-14-b"> 3</li>
-					<li><input type="radio" name="quest14" id="quest-14-c"> 4</li>
-					<li><input type="radio" name="quest14" id="quest-14-d"> 1</li>
-				</ol>
-			</section>
-			<section class="question">
-				<h3>Question 15:</h3>
-				<img id="quest-15-img" src="../../images/quiz-section/quest15.png" />
-				<p>What is the biggest country, by land mass in the world?</p>
-				<ol type="a">
-					<li><input type="radio" name="quest15" id="quest-15-a"> USA</li>
-					<li><input type="radio" name="quest15" id="quest-15-b"> China</li>
-					<li><input type="radio" name="quest15" id="quest-15-c"> Russia</li>
-					<li><input type="radio" name="quest15" id="quest-15-d"> Greenland</li>
-				</ol>
-			</section>
-		</section>
 			<section id="results">
 				<a id="results-link" href="../results/results.html">Results</a>
 			</section>
 			<section id="quiz-nav">
-				<a class="quiz-link" href="quiz-page-1.html">1</a>
-				<a class="quiz-link" href="quiz-page-2.html">2</a>
-				<a class="quiz-link" href="quiz-page-3.html">3</a>
-				<a class="quiz-link" href="quiz-page-4.html">4</a>
+				<a onclick="storeAnswer_4();" class="quiz-link" href="quiz-page-1.html">1</a>
+				<a onclick="storeAnswer_4();" class="quiz-link" href="quiz-page-2.html">2</a>
+				<a onclick="storeAnswer_4();" class="quiz-link" href="quiz-page-3.html">3</a>
+				<a class="quiz-link">4</a>
 			</section>
 		</main>
+		<script src="../../code/js/quiz.js"></script>
 	</body>
 </html>
