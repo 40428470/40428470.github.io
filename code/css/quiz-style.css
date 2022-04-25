@@ -74,6 +74,11 @@ main {
 	background-color: #ECF0C3;
 }
 
+.submit_button {
+	height: 100px;
+	width: 200px;
+}
+
 #quest-3-img {
 	height: 220px;
 	width: 400px;

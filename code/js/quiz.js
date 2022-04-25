@@ -63,7 +63,7 @@ function checkAnswer_1() {
     }
     else {
         var quest2 = "no-answer";
-        userAns[1] = quest2;
+        userAns[2] = quest2;
     }
 
     //checking the answers for question 4
@@ -85,8 +85,7 @@ function checkAnswer_1() {
 function checkAnswer_2() {
     /* This function checks how the user has answered the questions on quiz page 2 and stores them in an array */
 
-    console.log(userAns);
-
+    console.log(localStorage.getItem("test"));
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
         var quest5 = "correct";
@@ -254,7 +253,7 @@ function checkAnswer_4() {
     }
 }
 
-function storeAnswer_1(userAns) {
+function storeAnswer_1() {
     /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 1*/
 
     //converting user answer arrya to json 
@@ -262,11 +261,13 @@ function storeAnswer_1(userAns) {
     //console.log(userAns_json)
     
     //storing user answers in session storage
+    console.log(userAns);
     sessionStorage.setItem("1", userAns[0]);
     sessionStorage.setItem("2", userAns[1]);
     sessionStorage.setItem("3", userAns[2]);
     sessionStorage.setItem("4", userAns[3]);
- 
+    localStorage.setItem("test", "works");
+    console.log(seesion)
 }
 
 function storeAnswer_2(userAns) {
