@@ -263,15 +263,10 @@ function storeAnswer_1(userAns) {
 
     
     //storing user answers in session storage
-    
-
-
-
-    //sessionStorage.setItem("1", userAns_json);
-    //sessionStorage.setItem("2", userAns_json[1]);
-    //sessionStorage.setItem("3", userAns_json[2]);
-    //sessionStorage.setItem("4", userAns_json[3]);
-    //sessionStorage.setItem("test", userAns[0]);
+    sessionStorage.setItem("1", userAns_json);
+    sessionStorage.setItem("2", userAns_json[1]);
+    sessionStorage.setItem("3", userAns_json[2]);
+    sessionStorage.setItem("4", userAns_json[3]);
 
 
     //console.log(sessionStorage.length)
