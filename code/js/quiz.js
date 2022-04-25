@@ -24,7 +24,24 @@ function checkAnswer_1() {
     //checking question answer
     var i = 0
 
+    //checking the answers for question 1 and storing it in the user answer array
     if (document.getElementById(correctAns[0]).checked) {
+        var quest1 = "correct";
+        userAns[0] = quest1;
+    }
+    else if (document.getElementById("quest-1-a").checked || document.getElementById("quest-1-b").checked || document.getElementById("quest-1-c").checked) {
+        var quest1 = "wrong";
+        userAns[0] = quest1;
+    }
+    else {
+        var quest1 = "no-answer";
+        userAns[0] = quest1;
+
+    }
+    //return userAns;
+
+    //checking the answers for question 2 and storing it in the user array
+    if (document.getElementById(correctAns[1]).checked) {
         var quest1 = "correct";
         userAns[0] = quest1;
         console.log("correct")
@@ -36,26 +53,33 @@ function checkAnswer_1() {
         console.log("wrong");
         console.log(userAns);
     }
-    //return userAns;
-
-
 }
 
 
 
 function storeAnswer_1(userAns) {
-    var y = 1;
-    var i = 0;
-    console.log(userAns[0])
-    //while (i < 3) {
-        var y_string = y.toString();
-        console.log(i)
-        console.log(userAns[i]);
-    sessionStorage.setItem(y_string, userAns[i]);
-    sessionStorage.setItem("test", "works");
-        var y = y + 1;
-        var i = i + 1;
-    //}
-    console.log(sessionStorage.length)
-    console.log(sessionStorage.getItem("test"));
+    userAns[1] = "test1"
+    userAns[2] = "test2"
+    userAns[3] = "test3"
+    //converting user answer arrya to json 
+    //var userAns_json = JSON.stringify(userAns);
+    //console.log(userAns_json)
+
+
+    
+    //storing user answers in session storage
+    
+
+
+
+    //sessionStorage.setItem("1", userAns_json);
+    //sessionStorage.setItem("2", userAns_json[1]);
+    //sessionStorage.setItem("3", userAns_json[2]);
+    //sessionStorage.setItem("4", userAns_json[3]);
+    //sessionStorage.setItem("test", userAns[0]);
+
+
+    //console.log(sessionStorage.length)
+    var x = sessionStorage.getItem("test");
+    console.log(typeof x)
 }
