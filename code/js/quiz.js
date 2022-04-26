@@ -18,15 +18,8 @@ const correctAns = [
     "quest-14-1",
     "quest-15-c"
 ];
-var  userAns = [];
-function addText(quest_ver) {
-    var check = document.createElementById("")
-    var noti = document.createElement("p");
-    var noti_text = document.createTextNode("Answer Submitted");
-    noti.appendChild(noti_text);
-    var div_noti_1 = document.getElementById("quest-1-noti");
-    div_noti_1.appendChild(noti);
-}
+var userAns = [];
+
 
 function checkAnswer_1() {
     /* This function checks how the user has answered the questions on quiz page 1 and stores them in an array */
@@ -94,10 +87,6 @@ function checkAnswer_1() {
 
 function checkAnswer_2() {
     /* This function checks how the user has answered the questions on quiz page 2 and stores them in an array */
-    console.log(sessionStorage.getItem("1"));
-    console.log(sessionStorage.getItem("2"));
-    console.log(sessionStorage.getItem("3"));
-    console.log(sessionStorage.getItem("4"));
 
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
@@ -324,4 +313,139 @@ function storeAnswer_4(userAns) {
     sessionStorage.setItem("14", userAns[1]);
     sessionStorage.setItem("15", userAns[2]);
 
+}
+
+function sub_text_1() {
+    //question 1 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-1-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_2() {
+    //question 2 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-2-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_3() {
+    //question 3 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-3-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_4() {
+    //question 4 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-4-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_5() {
+    //question 5 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-5-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_6() {
+    //question 6 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-6-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_7() {
+    //question 7 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-7-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_8() {
+    //question 8 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-8-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_9() {
+    //question 9 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-9-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_10() {
+    //question 10 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-10-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_11() {
+    //quesiton 11 submit text 
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-11-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_12() {
+    //question 12 submit text 
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-12-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_13() {
+    //question 13 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-13-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_14() {
+    //question 14 submit text 
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-14-noti");
+    div_noti_1.appendChild(noti);
+}
+
+function sub_text_15() {
+    //question 15 submit text
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-15-noti");
+    div_noti_1.appendChild(noti);
 }
