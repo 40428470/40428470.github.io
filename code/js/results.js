@@ -44,5 +44,37 @@ function results_check() {
             var p_2_ele = document.getElementById("quest-2-incorrect");
             p_2_ele.appendChild(p_2);
             break;
+        case "no-answer":
+            var p_2 = document.createElement("p");
+            var p_2_txt = document.createTextNode("You Didn't Answer This One");
+            p_2.appendChild(p_2_txt);
+            var p_2_ele = document.getElementById("quest-2-incorrect");
+            p_2_ele.appendChild(p_2);
+            break;
+    }
+
+    //check question 3 
+    switch (sessionStorage.getItem("3")) {
+        case "correct":
+            var p_3 = document.createElement("p");
+            var p_3_txt = document.createTextNode("Correct! - Russia");
+            p_3.appendChild(p_3_txt);
+            var p_3_ele = document.getElementById("quest-3-correct");
+            p_3_ele.appendChild(p_3);
+            break;
+        case "wrong":
+            var p_3 = document.createElement("p");
+            var p_3_txt = document.createTextNode("Incorrect - Try Again");
+            p_3.appendChild(p_3_txt);
+            var p_3_ele = document.getElementById("quest-3-incorrect");
+            p_3_ele.appendChild(p_3);
+            break;
+        case "no-answer":
+            var p3 = document.createElement("p");
+            var p_3_txt = document.createTextNode("You Didn't Answer This One");
+            p_3.appendChild(p_3_txt);
+            var p_3_ele = document.getElementById("quest-3-incorrect");
+            p_3_ele.appendChild(p_3);
+            break;
     }
 }
