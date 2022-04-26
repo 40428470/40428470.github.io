@@ -152,6 +152,62 @@ function results_check() {
             p_6_ele.appendChild(p_6);
             break;
     }
+
+    //check question 7
+    switch (sessionStorage.getItem("7")) {
+        case "correct":
+            var p_7 = document.createElement("p");
+            var p_7_txt = document.createTextNode("Correct! - Parasite");
+            p_7.appendChild(p_7_txt);
+            var p_7_ele = document.getElementById("quest-7-correct");
+            p_7_ele.appendChild(p_7);
+            break;
+        case "wrong":
+            var p_7 = document.createElement("p");
+            var p_7_txt = document.createTextNode("Incorrect - Try Again");
+            p_7.appendChild(p_7_txt);
+            var p_7_ele = document.getElementById("quest-7-incorrect");
+            p_7_ele.appendChild(p_7);
+            break;
+        case "no-answer":
+            var p7 = document.createElement("p");
+            var p_7_txt = document.createTextNode("You Didn't Answer This One");
+            p_7.appendChild(p_7_txt);
+            var p_7_ele = document.getElementById("quest-7-incorrect");
+            p_7_ele.appendChild(p_7);
+            break;
+    }
+
+    //check question 8 
+    switch (sessionStorage.getItem("8")) {
+        case "correct":
+            var p_8 = document.createElement("p");
+            var p_8_txt = document.createTextNode("Correct! - 5 Seasons");
+            p_8.appendChild(p_8_txt);
+            var p_8_ele = document.getElementById("quest-8-correct");
+            p_8_ele.appendChild(p_8);
+            break;
+        case "wrong":
+            var p_8 = document.createElement("p");
+            var p_8_txt = document.createTextNode("Incorrect - Try Again");
+            p_8.appendChild(p_8_txt);
+            var p_7_ele = document.getElementById("quest-8-incorrect");
+            p_8_ele.appendChild(p_8);
+            break;
+        case "no-answer":
+            var p8 = document.createElement("p");
+            var p_8_txt = document.createTextNode("You Didn't Answer This One");
+            p_8.appendChild(p_8_txt);
+            var p_8_ele = document.getElementById("quest-8-incorrect");
+            p_8_ele.appendChild(p_8);
+            break;
+    }
+
+    //check question 9 
+    switch (sessionStorage.getItem("9")) {
+
+    }
+    
 }
 
 
