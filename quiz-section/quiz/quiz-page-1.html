@@ -33,6 +33,7 @@
 						<li><input type="radio" name="quest1" id="quest-1-c"> Kevin Spacey</li>
 						<li><input type="radio" name="quest1" id="quest-1-d"> Jim Carrey</li>
 					</ol>
+					<div id="quest-1-noti"></div>
 					<button onclick="checkAnswer_1();" class="submit_button" name="submit_button">Submit</button>
 					<button onclick="storeAnswer_1();">test</button>
 				</section>
@@ -74,7 +75,7 @@
 				</section>
 			</section>
 			<section id="quiz-nav">
-				<a onclick="storeAnswer_1();" class="quiz-link" href="quiz-page-2.html">Next</a>
+				<a onclick="checkAnswer_1(), storeAnswer_1()" class="quiz-link" href="quiz-page-2.html">Next</a>
 			</section>
 
 		</main>

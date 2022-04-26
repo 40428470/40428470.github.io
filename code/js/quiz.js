@@ -19,6 +19,14 @@ const correctAns = [
     "quest-15-c"
 ];
 var  userAns = [];
+function addText(quest_ver) {
+    var check = document.createElementById("")
+    var noti = document.createElement("p");
+    var noti_text = document.createTextNode("Answer Submitted");
+    noti.appendChild(noti_text);
+    var div_noti_1 = document.getElementById("quest-1-noti");
+    div_noti_1.appendChild(noti);
+}
 
 function checkAnswer_1() {
     /* This function checks how the user has answered the questions on quiz page 1 and stores them in an array */
@@ -27,6 +35,7 @@ function checkAnswer_1() {
     if (document.getElementById(correctAns[0]).checked) {
         var quest1 = "correct";
         userAns[0] = quest1;
+
     }
     else if (document.getElementById("quest-1-a").checked || document.getElementById("quest-1-b").checked || document.getElementById("quest-1-c").checked) {
         var quest1 = "wrong";
@@ -37,6 +46,7 @@ function checkAnswer_1() {
         userAns[0] = quest1;
 
     }
+    
 
     //checking the answers for question 2 
     if (document.getElementById(correctAns[1]).checked) {
@@ -84,14 +94,17 @@ function checkAnswer_1() {
 
 function checkAnswer_2() {
     /* This function checks how the user has answered the questions on quiz page 2 and stores them in an array */
+    console.log(sessionStorage.getItem("1"));
+    console.log(sessionStorage.getItem("2"));
+    console.log(sessionStorage.getItem("3"));
+    console.log(sessionStorage.getItem("4"));
 
-    console.log(localStorage.getItem("test"));
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
         var quest5 = "correct";
         userAns[4] = quest5;
     }
-    else if (document.getElementById("quest-5-a").checked || document.getElementById("quest-5-c").checked || document.getElementById("quest-1-d").checked) {
+    else if (document.getElementById("quest-5-a").checked || document.getElementById("quest-5-c").checked || document.getElementById("quest-5-d").checked) {
         var quest5 = "wrong";
         userAns[4] = quest5;
     }
@@ -266,8 +279,6 @@ function storeAnswer_1() {
     sessionStorage.setItem("2", userAns[1]);
     sessionStorage.setItem("3", userAns[2]);
     sessionStorage.setItem("4", userAns[3]);
-    localStorage.setItem("test", "works");
-    console.log(seesion)
 }
 
 function storeAnswer_2(userAns) {
@@ -278,10 +289,10 @@ function storeAnswer_2(userAns) {
     //console.log(userAns_json)
 
     //storing user answers in session storage
-    sessionStorage.setItem("1", userAns[0]);
-    sessionStorage.setItem("2", userAns[1]);
-    sessionStorage.setItem("3", userAns[2]);
-    sessionStorage.setItem("4", userAns[3]);
+    sessionStorage.setItem("5", userAns[0]);
+    sessionStorage.setItem("6", userAns[1]);
+    sessionStorage.setItem("7", userAns[2]);
+    sessionStorage.setItem("8", userAns[3]);
 
 }
 
@@ -293,10 +304,10 @@ function storeAnswer_3(userAns) {
     //console.log(userAns_json)
 
     //storing user answers in session storage
-    sessionStorage.setItem("1", userAns[0]);
-    sessionStorage.setItem("2", userAns[1]);
-    sessionStorage.setItem("3", userAns[2]);
-    sessionStorage.setItem("4", userAns[3]);
+    sessionStorage.setItem("9", userAns[0]);
+    sessionStorage.setItem("10", userAns[1]);
+    sessionStorage.setItem("11", userAns[2]);
+    sessionStorage.setItem("12", userAns[3]);
 
 }
 
@@ -309,8 +320,8 @@ function storeAnswer_4(userAns) {
     //console.log(userAns_json)
 
     //storing user answers in session storage
-    sessionStorage.setItem("1", userAns[0]);
-    sessionStorage.setItem("2", userAns[1]);
-    sessionStorage.setItem("3", userAns[2]);
+    sessionStorage.setItem("13", userAns[0]);
+    sessionStorage.setItem("14", userAns[1]);
+    sessionStorage.setItem("15", userAns[2]);
 
 }

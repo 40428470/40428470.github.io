@@ -3,7 +3,7 @@
 	<head>
 		<title>Fun Quiz - Results Page</title>
 		<link rel="stylesheet" href="../../code/css/results-style.css" type="text/css" />
-		<script src="code/js/main-script.js"></script>
+		
 	</head>
 	<body>
 		<header class="page-top">
@@ -14,7 +14,7 @@
 		<nav>
 			<section id="site-links">
 				<a class="nav-link" href="../../index.html">Home</a>
-				<a class ="nav-link" href="../../site-info-section/about-page.html">About</a>
+				<a class="nav-link" href="../../site-info-section/about-page.html">About</a>
 				<a class="nav-link" href="../../site-info-section/sourcs-page.html">Sources</a>
 			</section>
 		</nav>
@@ -22,12 +22,21 @@
 			<section id="sec-1">
 				<h1>Results</h1>
 			</section>
+			<button onclick="results_check();">test</button>
 			<section class="sub-cotainer">
 				<section class="question-result">
 					<h3>Question 1:</h3>
 					<p class="question">Who played the main character Stanley Ipkiss in the movie, The Mask (1994)?</p>
-					<p class="quest-correct">Correct! - Jim Carrey</p>
-					<p id="quest-1-incorrect">Incorrect - </p>
+					<section class="quest-correct">
+						<div id="quest-1-correct">
+
+						</div>
+					</section>
+					<section class="quest-incorrect">
+						<div id="quest-1-incorrect">
+						
+						</div>
+					</section>
 				</section>
 				<section class="question-result">
 					<h3>Question 2:</h3>
@@ -121,5 +130,6 @@
 				<input id="do-again-button" type="button" value="Try Again?" />
 			</section>
 		</main>
+		<script src="../../code/js/results.js"></script>
 	</body>
 </html>
