@@ -53,7 +53,7 @@ function results_check() {
             break;
     }
 
-    //check question 3 
+    //check question 3
     switch (sessionStorage.getItem("3")) {
         case "correct":
             var p_3 = document.createElement("p");
@@ -95,7 +95,7 @@ function results_check() {
             p_4_ele.appendChild(p_4);
             break;
         case "no-answer":
-            var p4 = document.createElement("p");
+            var p_4 = document.createElement("p");
             var p_4_txt = document.createTextNode("You Didn't Answer This One");
             p_4.appendChild(p_4_txt);
             var p_4_ele = document.getElementById("quest-4-incorrect");
@@ -104,6 +104,7 @@ function results_check() {
     }
 
     //check question 5
+    console.log(sessionStorage.getItem("5"));
     switch (sessionStorage.getItem("5")) {
         case "correct":
             var p_5 = document.createElement("p");
@@ -129,7 +130,7 @@ function results_check() {
     }
 
     //check question 6
-    switch (sessionStorage("6")) {
+    switch (sessionStorage.getItem("6")) {
         case "correct":
             var p_6 = document.createElement("p");
             var p_6_txt = document.createTextNode("Correct! - 2006");

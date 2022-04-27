@@ -91,120 +91,120 @@ function checkAnswer_2() {
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
         var quest5 = "correct";
-        userAns[4] = quest5;
+        userAns[0] = quest5;
+        console.log(userAns);
     }
     else if (document.getElementById("quest-5-a").checked || document.getElementById("quest-5-c").checked || document.getElementById("quest-5-d").checked) {
         var quest5 = "wrong";
-        userAns[4] = quest5;
+        userAns[0] = quest5;
     }
     else {
         var quest5 = "no-answer";
-        userAns[4] = quest5;
+        userAns[0] = quest5;
 
     }
 
     //checking the answers for question 6 
     if (document.getElementById(correctAns[5]).checked) {
         var quest6 = "correct";
-        userAns[5] = quest6;
+        userAns[1] = quest6;
     }
     else if (document.getElementById("quest-6-a").checked || document.getElementById("quest-6-c").checked || document.getElementById("quest-6-d").checked) {
         var quest6 = "wrong";
-        userAns[5] = quest6;
+        userAns[1] = quest6;
     }
     else {
         var quest6 = "no-answer";
-        userAns[5] = quest6;
+        userAns[1] = quest6;
     }
 
     //checking the answers for question 7
     if (document.getElementById(correctAns[6]).checked) {
         var quest7 = "correct";
-        userAns[6] = quest7;
+        userAns[2] = quest7;
     }
     else if (document.getElementById("quest-7-a").checked || document.getElementById("quest-7-b").checked || document.getElementById("quest-7-c").checked) {
         var quest7 = "wrong";
-        userAns[6] = quest7;
+        userAns[2] = quest7;
     }
     else {
         var quest7 = "no-answer";
-        userAns[6] = quest7;
+        userAns[2] = quest7;
     }
 
     //checking the answers for question 8
     if (document.getElementById(correctAns[7]).checked) {
         var quest8 = "correct";
-        userAns[7] = quest8;
+        userAns[3] = quest8;
     }
     else if (document.getElementById("quest-8-a").checked || document.getElementById("quest-8-b").checked || document.getElementById("quest-8-d").checked) {
         var quest8 = "wrong";
-        userAns[7] = quest8;
+        userAns[3] = quest8;
     }
     else {
         var quest8 = "no-answer";
-        userAns[7] = quest8;
+        userAns[3] = quest8;
     }
 }
 
 
 function checkAnswer_3() {
     /* This function checks how the user has answered the questions on quiz page 3 and stores them in an array */
-    console.log("works")
     //checking the answers for question 9
     if (document.getElementById(correctAns[8]).checked) {
         var quest9 = "correct";
-        userAns[8] = quest5;
+        userAns[0] = quest9;
     }
     else if (document.getElementById("quest-9-a").checked || document.getElementById("quest-9-b").checked || document.getElementById("quest-9-d").checked) {
         var quest9 = "wrong";
-        userAns[8] = quest9;
+        userAns[0] = quest9;
     }
     else {
         var quest9 = "no-answer";
-        userAns[8] = quest9;
+        userAns[0] = quest9;
 
     }
 
     //checking the answers for question 10 
     if (document.getElementById(correctAns[9]).checked) {
         var quest10 = "correct";
-        userAns[9] = quest10;
+        userAns[1] = quest10;
     }
     else if (document.getElementById("quest-10-a").checked || document.getElementById("quest-10-b").checked || document.getElementById("quest-10-c").checked) {
         var quest10 = "wrong";
-        userAns[9] = quest10;
+        userAns[1] = quest10;
     }
     else {
         var quest10 = "no-answer";
-        userAns[9] = quest10;
+        userAns[1] = quest10;
     }
 
     //checking the answers for question 11
     if (document.getElementById(correctAns[10]).checked) {
         var quest11 = "correct";
-        userAns[10] = quest11;
+        userAns[2] = quest11;
     }
     else if (document.getElementById("quest-11-b").checked || document.getElementById("quest-11-c").checked || document.getElementById("quest-11-d").checked) {
         var quest11 = "wrong";
-        userAns[10] = quest11;
+        userAns[2] = quest11;
     }
     else {
         var quest11 = "no-answer";
-        userAns[10] = quest11;
+        userAns[2] = quest11;
     }
 
     //checking the answers for question 12
     if (document.getElementById(correctAns[11]).checked) {
         var quest12 = "correct";
-        userAns[11] = quest12;
+        userAns[3] = quest12;
     }
     else if (document.getElementById("quest-12-a").checked || document.getElementById("quest-12-c").checked || document.getElementById("quest-12-d").checked) {
         var quest12 = "wrong";
-        userAns[11] = quest12;
+        userAns[3] = quest12;
     }
     else {
         var quest12 = "no-answer";
-        userAns[11] = quest12;
+        userAns[3] = quest12;
     }
 }
 
@@ -214,15 +214,15 @@ function checkAnswer_4() {
     //checking the answers for question 13
     if (document.getElementById(correctAns[12]).checked) {
         var quest13 = "correct";
-        userAns[12] = quest13;
+        userAns[0] = quest13;
     }
     else if (document.getElementById("quest-13-b").checked || document.getElementById("quest-13-c").checked || document.getElementById("quest-13-d").checked) {
         var quest13 = "wrong";
-        userAns[12] = quest13;
+        userAns[0] = quest13;
     }
     else {
         var quest13 = "no-answer";
-        userAns[12] = quest13;
+        userAns[0] = quest13;
 
     }
 
@@ -230,29 +230,29 @@ function checkAnswer_4() {
     console.log(correctAns[13]);
     if (document.getElementById(correctAns[13]).checked) {
         var quest14 = "correct";
-        userAns[13] = quest14;
+        userAns[1] = quest14;
     }
     else if (document.getElementById("quest-14-a").checked || document.getElementById("quest-14-b").checked || document.getElementById("quest-14-c").checked) {
         var quest14 = "wrong";
-        userAns[13] = quest14;
+        userAns[1] = quest14;
     }
     else {
         var quest14 = "no-answer";
-        userAns[13] = quest14;
+        userAns[1] = quest14;
     }
 
     //checking the answers for question 15
     if (document.getElementById(correctAns[14]).checked) {
         var quest15 = "correct";
-        userAns[14] = quest15;
+        userAns[2] = quest15;
     }
     else if (document.getElementById("quest-15-a").checked || document.getElementById("quest-15-b").checked || document.getElementById("quest-15-d").checked) {
         var quest15 = "wrong";
-        userAns[14] = quest15;
+        userAns[2] = quest15;
     }
     else {
         var quest15 = "no-answer";
-        userAns[14] = quest15;
+        userAns[2] = quest15;
     }
 }
 
@@ -271,7 +271,7 @@ function storeAnswer_1() {
     sessionStorage.setItem("4", userAns[3]);
 }
 
-function storeAnswer_2(userAns) {
+function storeAnswer_2() {
     /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 2*/
 
     //converting user answer arrya to json 
@@ -286,7 +286,7 @@ function storeAnswer_2(userAns) {
 
 }
 
-function storeAnswer_3(userAns) {
+function storeAnswer_3() {
     /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 3*/
 
     //converting user answer arrya to json 
@@ -302,7 +302,7 @@ function storeAnswer_3(userAns) {
 }
 
 
-function storeAnswer_4(userAns) {
+function storeAnswer_4() {
     /*This function store the answers from the user contained in the userAns array and stores it within session storage for page 4*/
 
     //converting user answer arrya to json 
