@@ -35,7 +35,7 @@ function checkAnswer_1_1() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -45,7 +45,7 @@ function checkAnswer_1_1() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -55,9 +55,9 @@ function checkAnswer_1_1() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
-            console.log(all_checked);
+            (all_checked);
         }
 
     }
@@ -72,7 +72,7 @@ function checkAnswer_1_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -82,7 +82,7 @@ function checkAnswer_1_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -92,9 +92,8 @@ function checkAnswer_1_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
-            console.log(all_checked);
         }
     }
 }
@@ -107,31 +106,29 @@ function checkAnswer_1_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
     else if (document.getElementById("quest-3-a").checked || document.getElementById("quest-3-b").checked || document.getElementById("quest-3-d").checked) {
         var quest3 = "wrong";
         userAns[2] = quest3;
-        all_checked = 3;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
     else {
         var quest2 = "no-answer";
         userAns[2] = quest2;
-        all_checked = 3;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
-            console.log(all_checked);
+            (all_checked);
         }
     }
 }
@@ -144,18 +141,17 @@ function checkAnswer_1_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
     else if (document.getElementById("quest-3-a").checked || document.getElementById("quest-3-b").checked || document.getElementById("quest-3-d").checked) {
         var quest3 = "wrong";
         userAns[3] = quest3;
-        all_checked = 4;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
@@ -165,17 +161,17 @@ function checkAnswer_1_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
-            console.log(all_checked);
+            (all_checked);
         }
     }
 }
 
 
-function checkAnswer_2() {
+function checkAnswer_2_1() {
     /* This function checks how the user has answered the questions on quiz page 2 and stores them in an array */
-    
+
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
         var quest5 = "correct";
@@ -183,7 +179,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -193,9 +189,10 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
+
     }
     else {
         var quest5 = "no-answer";
@@ -203,11 +200,14 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
 
     }
+}
+
+function checkAnswer_2_2() {
 
     //checking the answers for question 6 
     if (document.getElementById(correctAns[5]).checked) {
@@ -216,7 +216,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -226,7 +226,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -236,11 +236,13 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
+}
 
+function checkAnswer_2_3() {
     //checking the answers for question 7
     if (document.getElementById(correctAns[6]).checked) {
         var quest7 = "correct";
@@ -248,7 +250,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
@@ -258,7 +260,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
@@ -268,11 +270,13 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
+}
 
+function checkAnswer_2_3() {
     //checking the answers for question 8
     if (document.getElementById(correctAns[7]).checked) {
         var quest8 = "correct";
@@ -280,7 +284,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
@@ -290,7 +294,7 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
@@ -300,14 +304,14 @@ function checkAnswer_2() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
 }
 
 
-function checkAnswer_3() {
+function checkAnswer_3_1() {
     /* This function checks how the user has answered the questions on quiz page 3 and stores them in an array */
     //checking the answers for question 9
     if (document.getElementById(correctAns[8]).checked) {
@@ -316,7 +320,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -326,7 +330,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -336,12 +340,14 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
 
     }
+}
 
+function checkAnswer_3_2() {
     //checking the answers for question 10 
     if (document.getElementById(correctAns[9]).checked) {
         var quest10 = "correct";
@@ -349,7 +355,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -359,7 +365,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -369,11 +375,13 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
+}
 
+function checkAnswer_3_3() {
     //checking the answers for question 11
     if (document.getElementById(correctAns[10]).checked) {
         var quest11 = "correct";
@@ -381,7 +389,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
@@ -391,7 +399,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
@@ -401,11 +409,13 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
+}
 
+function checkAnswer_3_4() {
     //checking the answers for question 12
     if (document.getElementById(correctAns[11]).checked) {
         var quest12 = "correct";
@@ -413,7 +423,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
@@ -423,7 +433,7 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
@@ -433,13 +443,13 @@ function checkAnswer_3() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[3] = "yes";
         }
     }
 }
 
-function checkAnswer_4() {
+function checkAnswer_4_1() {
     /* This function checks how the user has answered the questions on quiz page 4 and stores them in an array */
 
     //checking the answers for question 13
@@ -449,7 +459,7 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -459,7 +469,7 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
     }
@@ -469,21 +479,23 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[0] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[0] = "yes";
         }
 
     }
+}
 
+function checkAnswer_4_2() {
     //checking the answers for question 14 
-    console.log(correctAns[13]);
+    (correctAns[13]);
     if (document.getElementById(correctAns[13]).checked) {
         var quest14 = "correct";
         userAns[1] = quest14;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -493,7 +505,7 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
@@ -503,11 +515,13 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[1] = "yes";
         }
     }
+}
 
+function checkAnswer_4_3() {
     //checking the answers for question 15
     if (document.getElementById(correctAns[14]).checked) {
         var quest15 = "correct";
@@ -515,7 +529,7 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
@@ -525,7 +539,7 @@ function checkAnswer_4() {
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
     }
@@ -534,7 +548,7 @@ function checkAnswer_4() {
         userAns[2] = quest15;
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
-            all_checked = all_checked + 1;
+            all_checked++;
             checkArray[2] = "yes";
         }
 
@@ -546,23 +560,23 @@ function storeAnswer_1() {
 
     //converting user answer arrya to json 
     //var userAns_json = JSON.stringify(userAns);
-    //console.log(userAns_json)
+    //(userAns_json)
     
     //storing user answers in session storage
-    console.log(userAns);
+    (userAns);
     sessionStorage.setItem("1", userAns[0]);
     sessionStorage.setItem("2", userAns[1]);
     sessionStorage.setItem("3", userAns[2]);
     sessionStorage.setItem("4", userAns[3]);
 
     //checking if all quesitons have been submitted
-    console.log(checkArray);
-    console.log(all_checked);
+    (checkArray);
+    (all_checked);
     if (all_checked == 4) {
-        //window.location.href = "quiz-page-2.html";
+        window.location.href = "quiz-page-2.html";
     }
     else {
-        alert("You have not submitted all question, please do so before continuing");
+        alert("You have not submitted all question, please do so before continuing, even if you want to skip one!");
     }
 }
 
@@ -571,7 +585,7 @@ function storeAnswer_2() {
 
     //converting user answer arrya to json 
     //var userAns_json = JSON.stringify(userAns);
-    //console.log(userAns_json)
+    //(userAns_json)
 
     //storing user answers in session storage
     sessionStorage.setItem("5", userAns[0]);
@@ -584,7 +598,7 @@ function storeAnswer_2() {
         window.location.href = "quiz-page-3.html";
     }
     else {
-        alert("You have not submitted all question, please do so before continuing");
+        alert("You have not submitted all question, please do so before continuing, even if you want to skip one!");
     }
 
 }
@@ -594,7 +608,7 @@ function storeAnswer_3() {
 
     //converting user answer arrya to json 
     //var userAns_json = JSON.stringify(userAns);
-    //console.log(userAns_json)
+    //(userAns_json)
 
     //storing user answers in session storage
     sessionStorage.setItem("9", userAns[0]);
@@ -607,7 +621,7 @@ function storeAnswer_3() {
         window.location.href = "quiz-page-3.html";
     }
     else {
-        alert("You have not submitted all question, please do so before continuing");
+        alert("You have not submitted all question, please do so before continuing, even if you want to skip one!");
     }
 
 }
@@ -618,7 +632,7 @@ function storeAnswer_4() {
 
     //converting user answer arrya to json 
     //var userAns_json = JSON.stringify(userAns);
-    //console.log(userAns_json)
+    //(userAns_json)
 
     //storing user answers in session storage
     sessionStorage.setItem("13", userAns[0]);
@@ -630,7 +644,7 @@ function storeAnswer_4() {
         window.location.href = "../results/results.html";
     }
     else {
-        alert("You have not submitted all question, please do so before continuing");
+        alert("You have not submitted all question, please do so before continuing, even if you want to skip one!");
     }
 
 }
