@@ -137,7 +137,7 @@ function checkAnswer_1_4() {
     //checking the answers for question 4
     if (document.getElementById(correctAns[3]).checked) {
         var quest4 = "correct";
-        userAns[3] = quest3;
+        userAns[3] = quest4;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
@@ -146,8 +146,8 @@ function checkAnswer_1_4() {
         }
     }
     else if (document.getElementById("quest-3-a").checked || document.getElementById("quest-3-b").checked || document.getElementById("quest-3-d").checked) {
-        var quest3 = "wrong";
-        userAns[3] = quest3;
+        var quest4 = "wrong";
+        userAns[3] = quest4;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
@@ -156,8 +156,8 @@ function checkAnswer_1_4() {
         }
     }
     else {
-        var quest2 = "no-answer";
-        userAns[3] = quest2;
+        var quest4 = "no-answer";
+        userAns[3] = quest4;
 
         //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
@@ -276,7 +276,7 @@ function checkAnswer_2_3() {
     }
 }
 
-function checkAnswer_2_3() {
+function checkAnswer_2_4() {
     //checking the answers for question 8
     if (document.getElementById(correctAns[7]).checked) {
         var quest8 = "correct";
@@ -564,10 +564,10 @@ function storeAnswer_1() {
     
     //storing user answers in session storage
     (userAns);
-    sessionStorage.setItem("1", userAns[0]);
-    sessionStorage.setItem("2", userAns[1]);
-    sessionStorage.setItem("3", userAns[2]);
-    sessionStorage.setItem("4", userAns[3]);
+    localStorage.setItem("1", userAns[0]);
+    localStorage.setItem("2", userAns[1]);
+    localStorage.setItem("3", userAns[2]);
+    localStorage.setItem("4", userAns[3]);
 
     //checking if all quesitons have been submitted
     (checkArray);
@@ -588,10 +588,10 @@ function storeAnswer_2() {
     //(userAns_json)
 
     //storing user answers in session storage
-    sessionStorage.setItem("5", userAns[0]);
-    sessionStorage.setItem("6", userAns[1]);
-    sessionStorage.setItem("7", userAns[2]);
-    sessionStorage.setItem("8", userAns[3]);
+    localStorage.setItem("5", userAns[0]);
+    localStorage.setItem("6", userAns[1]);
+    localStorage.setItem("7", userAns[2]);
+    localStorage.setItem("8", userAns[3]);
 
     //checking if all quesitons have been submitted
     if (all_checked == 4) {
@@ -611,14 +611,14 @@ function storeAnswer_3() {
     //(userAns_json)
 
     //storing user answers in session storage
-    sessionStorage.setItem("9", userAns[0]);
-    sessionStorage.setItem("10", userAns[1]);
-    sessionStorage.setItem("11", userAns[2]);
-    sessionStorage.setItem("12", userAns[3]);
+    localStorage.setItem("9", userAns[0]);
+    localStorage.setItem("10", userAns[1]);
+    localStorage.setItem("11", userAns[2]);
+    localStorage.setItem("12", userAns[3]);
 
     //checking if all quesitons have been submitted
     if (all_checked == 4) {
-        window.location.href = "quiz-page-3.html";
+        window.location.href = "quiz-page-4.html";
     }
     else {
         alert("You have not submitted all question, please do so before continuing, even if you want to skip one!");
@@ -635,12 +635,12 @@ function storeAnswer_4() {
     //(userAns_json)
 
     //storing user answers in session storage
-    sessionStorage.setItem("13", userAns[0]);
-    sessionStorage.setItem("14", userAns[1]);
-    sessionStorage.setItem("15", userAns[2]);
+    localStorage.setItem("13", userAns[0]);
+    localStorage.setItem("14", userAns[1]);
+    localStorage.setItem("15", userAns[2]);
 
     //checking if all quesitons have been submitted
-    if (all_checked == 4) {
+    if (all_checked == 3) {
         window.location.href = "../results/results.html";
     }
     else {

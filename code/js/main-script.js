@@ -13,3 +13,9 @@ function quiz_status() {
         }
     }
 }
+
+function clear_quiz_main() {
+
+    //clearing storage before starting quiz
+    localStorage.clear();
+}
