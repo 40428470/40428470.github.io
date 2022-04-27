@@ -380,3 +380,9 @@ function results_check() {
             break;
     }
 }
+
+function clear_quiz() {
+    //storing that the quiz has been completed and clearing sessionStorage
+    sessionStorage.clear();
+    sessionStorage.setItem("complete", "yes");
+}

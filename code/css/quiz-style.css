@@ -75,8 +75,9 @@ main {
 }
 
 .submit_button {
-	height: 100px;
-	width: 200px;
+	height: 50px;
+	width: 100px;
+	margin-bottom: 10px;
 }
 
 #quest-3-img {
@@ -160,7 +161,7 @@ main {
 	margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 150px;
+	width: 75px;
 	background-color: #d33f41;
 }
 
