@@ -22,10 +22,10 @@ const correctAns = [
 ];
 
 var userAns = [];
-var all_checked = 0;
+var all_checked = [];
 var checkArray = ["not", "not", "not", "not"]
 
-function checkAnswer_1() {
+function checkAnswer_1_1() {
     /* This function checks how the user has answered the questions on quiz page 1 and stores them in an array */
 
     //checking the answers for question 1 
@@ -57,15 +57,20 @@ function checkAnswer_1() {
         if (checkArray[0] == "not") {
             all_checked = all_checked + 1;
             checkArray[0] = "yes";
+            console.log(all_checked);
         }
 
     }
-    
+
+}
+function checkAnswer_1_2() {
 
     //checking the answers for question 2 
     if (document.getElementById(correctAns[1]).checked) {
         var quest2 = "correct";
         userAns[1] = quest2;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
             all_checked = all_checked + 1;
             checkArray[1] = "yes";
@@ -74,6 +79,8 @@ function checkAnswer_1() {
     else if (document.getElementById("quest-2-a").checked || document.getElementById("quest-2-c").checked || document.getElementById("quest-2-d").checked) {
         var quest2 = "wrong";
         userAns[1] = quest2;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
             all_checked = all_checked + 1;
             checkArray[1] = "yes";
@@ -82,16 +89,23 @@ function checkAnswer_1() {
     else {
         var quest2 = "no-answer";
         userAns[1] = quest2;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[1] == "not") {
             all_checked = all_checked + 1;
             checkArray[1] = "yes";
+            console.log(all_checked);
         }
     }
+}
+function checkAnswer_1_3() {
 
     //checking the answers for question 3
     if (document.getElementById(correctAns[2]).checked) {
         var quest3 = "correct";
         userAns[2] = quest3;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
             all_checked = all_checked + 1;
             checkArray[2] = "yes";
@@ -101,6 +115,8 @@ function checkAnswer_1() {
         var quest3 = "wrong";
         userAns[2] = quest3;
         all_checked = 3;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
             all_checked = all_checked + 1;
             checkArray[2] = "yes";
@@ -110,16 +126,23 @@ function checkAnswer_1() {
         var quest2 = "no-answer";
         userAns[2] = quest2;
         all_checked = 3;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[2] == "not") {
             all_checked = all_checked + 1;
             checkArray[2] = "yes";
+            console.log(all_checked);
         }
     }
+}
 
+function checkAnswer_1_4() {
     //checking the answers for question 4
     if (document.getElementById(correctAns[3]).checked) {
         var quest4 = "correct";
         userAns[3] = quest3;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
             all_checked = all_checked + 1;
             checkArray[3] = "yes";
@@ -129,6 +152,8 @@ function checkAnswer_1() {
         var quest3 = "wrong";
         userAns[3] = quest3;
         all_checked = 4;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
             all_checked = all_checked + 1;
             checkArray[3] = "yes";
@@ -137,9 +162,12 @@ function checkAnswer_1() {
     else {
         var quest2 = "no-answer";
         userAns[3] = quest2;
+
+        //checking if the button has been pressed already and if not adding to all checked variable
         if (checkArray[3] == "not") {
             all_checked = all_checked + 1;
             checkArray[3] = "yes";
+            console.log(all_checked);
         }
     }
 }
@@ -528,8 +556,10 @@ function storeAnswer_1() {
     sessionStorage.setItem("4", userAns[3]);
 
     //checking if all quesitons have been submitted
+    console.log(checkArray);
+    console.log(all_checked);
     if (all_checked == 4) {
-        window.location.href = "quiz-page-2.html";
+        //window.location.href = "quiz-page-2.html";
     }
     else {
         alert("You have not submitted all question, please do so before continuing");
