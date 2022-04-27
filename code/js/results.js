@@ -385,4 +385,5 @@ function clear_quiz() {
     //storing that the quiz has been completed and clearing sessionStorage
     sessionStorage.clear();
     sessionStorage.setItem("complete", "yes");
+    window.location.href = ("../quiz/quiz-page-1.html");
 }
