@@ -15,7 +15,7 @@ const correctAns = [
     "quest-11-a",
     "quest-12-b",
     "quest-13-a",
-    "quest-14-1",
+    "quest-14-d",
     "quest-15-c"
 ];
 var userAns = [];
@@ -87,7 +87,7 @@ function checkAnswer_1() {
 
 function checkAnswer_2() {
     /* This function checks how the user has answered the questions on quiz page 2 and stores them in an array */
-
+    
     //checking the answers for question 5
     if (document.getElementById(correctAns[4]).checked) {
         var quest5 = "correct";
@@ -149,7 +149,7 @@ function checkAnswer_2() {
 
 function checkAnswer_3() {
     /* This function checks how the user has answered the questions on quiz page 3 and stores them in an array */
-
+    console.log("works")
     //checking the answers for question 9
     if (document.getElementById(correctAns[8]).checked) {
         var quest9 = "correct";
@@ -227,6 +227,7 @@ function checkAnswer_4() {
     }
 
     //checking the answers for question 14 
+    console.log(correctAns[13]);
     if (document.getElementById(correctAns[13]).checked) {
         var quest14 = "correct";
         userAns[13] = quest14;
@@ -317,6 +318,7 @@ function storeAnswer_4(userAns) {
 
 function sub_text_1() {
     //question 1 submit text
+    console.log("works")
     var noti = document.createElement("p");
     var noti_text = document.createTextNode("Answer Submitted");
     noti.appendChild(noti_text);

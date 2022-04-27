@@ -70,7 +70,7 @@ function results_check() {
             p_3_ele.appendChild(p_3);
             break;
         case "no-answer":
-            var p3 = document.createElement("p");
+            var p_3 = document.createElement("p");
             var p_3_txt = document.createTextNode("You Didn't Answer This One");
             p_3.appendChild(p_3_txt);
             var p_3_ele = document.getElementById("quest-3-incorrect");
@@ -304,7 +304,7 @@ function results_check() {
     }
 
     //check question 13 
-    switch (sessionStorage.getItem("13") {
+    switch (sessionStorage.getItem("13")) {
         case "correct":
             var p_13 = document.createElement("p");
             var p_13_txt = document.createTextNode("Correct! - 2012");
